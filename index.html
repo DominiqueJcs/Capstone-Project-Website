@@ -30,7 +30,7 @@
 
     <!-- HEADER SECTION this is the large picture section at the top of the website. -->
 
-    <section class="header">
+    <section class="header" id="home">
 
         <!-- Navigation Bar -->
         <nav>
@@ -41,7 +41,7 @@
             </a>
 
 
-            <!-- Mobile menu button -->
+            <!-- Hamburger menu button -->
             <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
 
 
@@ -52,12 +52,12 @@
                 <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
 
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#resources">RESOURCES</a></li>
-                    <li><a href="#academic">ACADEMIC</a></li>
-                    <li><a href="#financial">FINANCIAL</a></li>
-                    <li><a href="#career">CAREER</a></li>
-                    <li><a href="#campus">CAMPUS LIFE</a></li>
+                    <li><a href="#home" onclick="hideMenu()">HOME</a></li>
+                    <li><a href="#resources" onclick="hideMenu()">RESOURCES</a></li>
+                    <li><a href="#academic" onclick="hideMenu()">ACADEMIC</a></li>
+                    <li><a href="#financial" onclick="hideMenu()">FINANCIAL</a></li>
+                    <li><a href="#career" onclick="hideMenu()">CAREER</a></li>
+                    <li><a href="#campus" onclick="hideMenu()">CAMPUS LIFE</a></li>
                 </ul>
 
             </div>
@@ -66,7 +66,7 @@
 
 
         <!-- Hero Text -->
-        <div class="text-box" id="home">
+        <div class="text-box">
 
             <h1>SAVANNAH STATE UNIVERSITY</h1>
 
@@ -85,9 +85,7 @@
 
 
 
-    <!-- =========================================================
-         RESOURCE HUB INTRODUCTION
-         ========================================================= -->
+    <!-- RESOURCE HUB INTRODUCTION -->
 
     <section class="resources" id="resources">
 
@@ -99,9 +97,7 @@
         </p>
 
 
-        <!-- =====================================================
-             RESOURCE CATEGORIES
-             ===================================================== -->
+        <!-- RESOURCE cator. -->
 
         <div class="row">
 
@@ -183,9 +179,7 @@
 
 
 
-    <!-- =========================================================
-         The search will NOT actually work yet adding JavaScript later.
-         ========================================================= -->
+    <!-- search NOT working yet add JavaScript later.-->
 
     <section class="search-section">
 
@@ -202,6 +196,568 @@
                 "Tutoring" , "Financial Aid" , "Career Services" -->
 
             <input type="text"
+                id="searchInput"
+                placeholder="I'm looking for tutoring...">
+
+            <button type="button" onclick="searchResources()">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Search results will appear here -->
+        <div id="searchResults" class="search-results"></div>
+
+    </section>
+
+
+
+    <!-- CAMPUS LIFE SECTION -->
+
+    <section class="campus" id="campus">
+
+        <h1>Campus Life & Student Support</h1>
+
+        <p class="section-intro">
+            Explore resources that support students beyond the classroom.
+        </p>
+
+
+        <div class="row">
+
+
+            <!-- Campus Life Card -->
+            <div class="campus-col">
+
+                <!--
+        
+                    Add a Savannah State campus/student-life picture here.
+
+                    Example:
+                    images/campus-life.jpg
+                -->
+
+                <img src="images/campus-life.jpg"
+                    alt="Savannah State campus life">
+
+                <div class="layer">
+                    <h3>CAMPUS LIFE</h3>
+                </div>
+
+            </div>
+
+
+
+            <!-- Student Support Card -->
+            <div class="campus-col">
+
+                <!--
+                    Add another Savannah State picture here.
+                -->
+
+                <img src="images/student-support.jpg"
+                    alt="Savannah State student support">
+
+                <div class="layer">
+                    <h3>STUDENT SUPPORT</h3>
+                </div>
+
+            </div>
+
+
+
+            <!-- Student Organizations Card -->
+            <div class="campus-col">
+
+                <!--Add a picture showing Savannah State
+                    students or student organizations. -->
+
+                <img src="images/student-organizations.jpg"
+                    alt="Savannah State student organizations">
+
+                <div class="layer">
+                    <h3>STUDENT ORGANIZATIONS</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDENT SERVICES -->
+
+    <section class="facilities">
+
+        <h1>Student Services</h1>
+
+        <p class="section-intro">
+            Helpful services and information available to Savannah State students.
+        </p>
+
+
+        <div class="row">
+
+
+            <!-- Housing -->
+            <div class="facilities-col">
+
+                <!-- Add housing/residence hall picture -->
+                <img src="images/housing.jpg"
+                    alt="Savannah State housing">
+
+                <h3>Housing</h3>
+
+                <p>
+                    Information about campus housing and residential services.
+                </p>
+
+            </div>
+
+
+
+            <!-- Library -->
+            <div class="facilities-col">
+
+                <!-- Add Savannah State library picture -->
+                <img src="images/library.jpg"
+                    alt="Savannah State library">
+
+                <h3>Library</h3>
+
+                <p>
+                    Find library resources, study information, and academic support.
+                </p>
+
+            </div>
+
+
+
+            <!-- Student Activities -->
+            <div class="facilities-col">
+
+                <!-- Add student activities picture -->
+                <img src="images/activities.jpg"
+                    alt="Savannah State student activities">
+
+                <h3>Student Activities</h3>
+
+                <p>
+                    Discover campus activities, organizations, and student events.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--  RESOURCE INFORMATION SECTION
+         This is where your actual resource information will be. -->
+
+    <section class="resource-information">
+
+        <h1>Resource Information</h1>
+
+        <p class="section-intro">
+            Find the information you need before visiting or contacting a resource.
+        </p>
+
+
+        <div class="info-box">
+
+            <h3>Example: Tutoring Resources</h3>
+
+            <!-- THESE ARE PLACEHOLDERS FOR NOW. Later, adding each "Add information here"
+                with REAL Savannah State information. -->
+
+            <p><strong>Location:</strong> Add information here</p>
+
+            <p><strong>Contact:</strong> Add information here</p>
+
+            <p><strong>Hours:</strong> Add information here</p>
+
+            <p><strong>Description:</strong> Add information here</p>
+
+
+            <!--
+                    Visit Official SSU Website
+            -->
+
+            <a href="https://savannahstate.edu" class="resource-btn">
+                Visit Official SSU Website
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SURVEY / CAPSTONE SECTION -->
+
+    <section class="survey">
+
+        <h1>Help Us Improve the Student Experience</h1>
+
+        <p>
+            This Student Resource Hub is being developed as a Savannah State
+            University senior design project based on student needs and feedback.
+        </p>
+
+        <a href="https://forms.gle/qPiV19iKUoWQYLKY6" class="hero-btn">
+            Take Our Student Survey
+        </a>
+
+    </section>
+
+
+
+    <!-- LOCATION SECTION-->
+
+    <section class="location">
+
+        <h1>Find Savannah State University</h1>
+
+        <p class="section-intro">
+            Savannah State University — Savannah, Georgia
+        </p>
+
+
+        <div class="map-placeholder">
+
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.664638524401!2d-81.0625787!3d32.0241968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fb77b6ba6a90a7%3A0x25dda623ac38228!2sSavannah%20State%20University!5e0!3m2!1sen!2sus!4v1789701633225!5m2!1sen!2sus"
+                    width="900"
+                    height="600"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h4>Savannah State Student Resource Hub</h4>
+
+        <p>
+            A senior design project created to help Savannah State
+            students find important university resources.
+        </p>
+
+
+        <div class="icons">
+
+            <!-- Add official SSU social media links -->
+
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+
+        </div>
+
+
+        <p class="copyright">
+            Savannah State University — Senior Design Capstone Project © 2026
+        </p>
+
+    </footer>
+
+
+    <!-- cureently learning JAVASCRIPT to get functionality -->
+
+    <script>
+
+        /* =========================================================
+           MOBILE / DESKTOP HAMBURGER MENU
+           ========================================================= */
+
+        var navLinks = document.getElementById("navLinks");
+
+
+        function showMenu() {
+
+            navLinks.style.right = "0";
+
+        }
+
+
+        function hideMenu() {
+
+            navLinks.style.right = "-280px";
+
+        }
+
+
+
+        /* RESOURCE SEARCH */
+
+        function searchResources() {
+
+            var searchInput = document.getElementById("searchInput");
+
+            var searchResults = document.getElementById("searchResults");
+
+            var searchText = searchInput.value.toLowerCase().trim();
+
+
+            if (searchText === "") {
+
+                searchResults.innerHTML =
+                    "<p>Please enter a resource you are looking for.</p>";
+
+                return;
+
+            }
+
+
+            if (
+                searchText.includes("tutor") ||
+                searchText.includes("academic") ||
+                searchText.includes("advis")
+            ) {
+
+                searchResults.innerHTML =
+                    "<h3>Academic Support</h3>" +
+                    "<p>We found academic resources that may help you.</p>" +
+                    "<a href='#academic' class='resource-btn'>View Academic Support</a>";
+
+                return;
+
+            }
+
+
+            if (
+                searchText.includes("financial") ||
+                searchText.includes("fafsa") ||
+                searchText.includes("scholarship") ||
+                searchText.includes("billing")
+            ) {
+
+                searchResults.innerHTML =
+                    "<h3>Financial Aid & Billing</h3>" +
+                    "<p>We found financial resources that may help you.</p>" +
+                    "<a href='#financial' class='resource-btn'>View Financial Resources</a>";
+
+                return;
+
+            }
+
+
+            if (
+                searchText.includes("career") ||
+                searchText.includes("job") ||
+                searchText.includes("internship") ||
+                searchText.includes("resume")
+            ) {
+
+                searchResults.innerHTML =
+                    "<h3>Career Development</h3>" +
+                    "<p>We found career resources that may help you.</p>" +
+                    "<a href='#career' class='resource-btn'>View Career Resources</a>";
+
+                return;
+
+            }
+
+
+            searchResults.innerHTML =
+                "<h3>No Resource Found</h3>" +
+                "<p>Try searching for tutoring, financial aid, FAFSA, scholarships, career services, internships, or resumes.</p>";
+
+        }
+
+
+        /* Allows the user to press Enter instead of clicking Search */
+
+        document.getElementById("searchInput").addEventListener("keypress", function(event) {
+
+            if (event.key === "Enter") {
+
+                searchResources();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
+            <!-- Replace "images/logo.png" with your Savannah State logo.-->
+            <a href="index.html">
+                <img src="images/logo.png" alt="Savannah State University Logo">
+            </a>
+
+
+            <!-- Mobile menu button -->
+            <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="navLinks">
+
+                <!-- Mobile close button -->
+                <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#resources">RESOURCES</a></li>
+                    <li><a href="#academic">ACADEMIC</a></li>
+                    <li><a href="#financial">FINANCIAL</a></li>
+                    <li><a href="#career">CAREER</a></li>
+                    <li><a href="#campus">CAMPUS LIFE</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Hero Text -->
+        <div class="text-box" id="home">
+
+            <h1>SAVANNAH STATE UNIVERSITY</h1>
+
+            <p>
+                Student Resource Hub
+            </p>
+
+            <!--This button will can take students to the resource section. -->
+            <a href="#resources" class="hero-btn">
+                Explore Student Resources
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!--  RESOURCE HUB INTRODUCTION-->
+
+    <section class="resources" id="resources">
+
+        <h1>Student Resource Hub</h1>
+
+        <p class="section-intro">
+            A centralized place to help Savannah State University students
+            find important campus resources, services, and support.
+        </p>
+
+
+        <!-- RESOURCE CATEGORIES -->
+
+        <div class="row">
+
+
+            <!-- ACADEMIC SUPPORT -->
+            <div class="resource-col" id="academic">
+
+                <i class="fa fa-book"></i>
+
+                <h3>Academic Support</h3>
+
+                <p>
+                    Find academic resources and services designed to help
+                    students succeed.
+                </p>
+
+                <ul>
+                    <li>Tutoring Resources</li>
+                    <li>Academic Advising</li>
+                    <li>Library Resources</li>
+                    <li>Registrar Information</li>
+                </ul>
+
+                <!--Add a button/link that opens a dedicated
+                    Academic Resources page. -->
+
+            </div>
+
+
+
+            <!-- FINANCIAL AID -->
+            <div class="resource-col" id="financial">
+
+                <i class="fa fa-money"></i>
+
+                <h3>Financial Aid & Billing</h3>
+
+                <p>
+                    Find information about financial assistance,
+                    scholarships, FAFSA, and billing.
+                </p>
+
+                <ul>
+                    <li>Financial Aid Information</li>
+                    <li>Scholarships</li>
+                    <li>FAFSA Information</li>
+                    <li>Emergency Financial Resources</li>
+                </ul>
+
+            </div>
+
+
+
+            <!-- CAREER DEVELOPMENT -->
+            <div class="resource-col" id="career">
+
+                <i class="fa fa-briefcase"></i>
+
+                <h3>Career Development</h3>
+
+                <p>
+                    Find career preparation resources and opportunities
+                    for internships and employment.
+                </p>
+
+                <ul>
+                    <li>Career Services</li>
+                    <li>Resume Resources</li>
+                    <li>Internship Resources</li>
+                    <li>Job Boards</li>
+                    <li>Interview Preparation</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- adding JavaScript later.-->
+
+    <section class="search-section">
+
+        <h1>Find a Resource</h1>
+
+        <p>
+            What are you looking for?
+        </p>
+
+        <div class="search-box">
+
+        
+
+            <input type="text"
                 placeholder="I'm looking for tutoring...">
 
             <button type="button">
@@ -214,9 +770,7 @@
 
 
 
-    <!-- =========================================================
-         CAMPUS LIFE SECTION
-         ========================================================= -->
+    <!-- CAMPUS LIFE SECTION -->
 
     <section class="campus" id="campus">
 
