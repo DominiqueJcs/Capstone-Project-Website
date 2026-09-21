@@ -3,13 +3,14 @@
 
 <head>
 
+    <!-- Basic Page Information -->
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Page Title -->
     <title>Savannah State Student Resource Hub</title>
 
-    <!-- Google Font -->
+    <!-- Google Font - Same style as the inspiration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Our CSS -->
     <link rel="stylesheet" href="style.css">
@@ -29,20 +29,19 @@
 <body>
 
 
-<!-- HEADER -->
+<!--HEADER  -->
 
-<section class="header" id="home">
+<section class="header">
 
     <nav>
 
-        <!-- Savannah State Logo -->
-        <a href="#home">
+        <!-- Upload your Savannah State logo here -->
+        <a href="index.html">
             <img src="images/logo.png" alt="Savannah State University Logo">
         </a>
 
 
-        <!-- Hamburger Menu -->
-
+        <!-- CSS-only mobile menu -->
         <input type="checkbox" id="menu-toggle">
 
         <label for="menu-toggle" class="menu-icon">
@@ -50,49 +49,45 @@
         </label>
 
 
-        <!-- Navigation Links -->
-
         <div class="nav-links">
 
             <label for="menu-toggle" class="close-icon">
                 <i class="fa fa-times"></i>
             </label>
 
+            <ul>
 
-            <a href="#home">HOME</a>
+                <li><a href="#home">HOME</a></li>
 
-            <a href="#resources">STUDENT RESOURCES</a>
+                <li><a href="#resources">RESOURCES</a></li>
 
-            <a href="#academic">ACADEMIC SUPPORT</a>
+                <li><a href="#additional-resources">ADDITIONAL RESOURCES</a></li>
 
-            <a href="#financial">FINANCIAL AID</a>
+                <li><a href="#survey">SURVEY</a></li>
 
-            <a href="#career">CAREER DEVELOPMENT</a>
+                <li><a href="#location">LOCATION</a></li>
 
-            <a href="#campus">CAMPUS LIFE</a>
-
-            <a href="#student-services">STUDENT SERVICES</a>
-
-            <a href="#athletics">ATHLETICS</a>
-
-            <a href="#additional">ADDITIONAL RESOURCES</a>
-
-            <a href="#survey">SURVEY</a>
-
-            <a href="#location">LOCATION</a>
+            </ul>
 
         </div>
 
     </nav>
 
 
-    <!-- Header Text -->
+    <!-- Main header Text -->
 
-    <div class="text-box">
+    <div class="text-box" id="home">
 
         <h1>SAVANNAH STATE UNIVERSITY</h1>
 
-        <p>Student Resource Hub</p>
+        <h2>Student Resource Hub</h2>
+
+        <p>
+            Find important student resources, services, and campus information
+            all in one place.
+        </p>
+
+        <a href="#search" class="hero-btn">FIND A RESOURCE</a>
 
     </div>
 
@@ -100,18 +95,21 @@
 
 
 
-<!-- SEARCH -->
+<!-- FIND A RESOURCE-->
 
-<section class="search-section">
+<section class="search-section" id="search">
 
-    <h1>Find a Resource</h1>
+    <h1>FIND A RESOURCE</h1>
 
-    <p>What are you looking for?</p>
+    <p>
+        Looking for something at Savannah State? Start here.
+    </p>
 
 
     <div class="search-box">
 
-        <input type="text" placeholder="I'm looking for tutoring...">
+        <!-- Search functionality can be added later -->
+        <input type="text" placeholder="I'm looking for...">
 
         <button type="button">SEARCH</button>
 
@@ -121,194 +119,198 @@
 
 
 
-<!-- STUDENT RESOURCES -->
+<!--MAIN STUDENT RESOURCES -->
 
 <section class="resources" id="resources">
 
-    <h1>Student Resources</h1>
+    <h1>STUDENT RESOURCES</h1>
 
-    <p class="section-intro">
-        Find helpful Savannah State University resources in one simple place.
+    <p>
+        Explore some of the most important resources available to
+        Savannah State students.
     </p>
 
-
-    <!-- FIRST ROW -->
 
     <div class="row">
 
 
-        <!-- Academic Support -->
+        <!--ACADEMIC SUPPORT -->
 
-        <div class="resource-col" id="academic">
+        <div class="resource-col">
 
-            <i class="fa fa-book resource-icon"></i>
+            <!-- Upload an academic/library/student image here -->
+            <img src="images/academic-support.jpg" alt="Academic Support">
 
-            <h3>Academic Support</h3>
+            <div class="resource-layer">
 
-            <p>
-                Find resources to help you succeed in your classes and stay on track academically.
-            </p>
+                <div class="resource-text">
 
-            <ul>
+                    <h3>ACADEMIC SUPPORT</h3>
 
-                <li>Tutoring Resources</li>
+                    <p>
+                        Tutoring<br>
+                        Library Resources<br>
+                        Academic Advising<br>
+                        Study Resources
+                    </p>
 
-                <li>Academic Advising</li>
+                </div>
 
-                <li>Library Resources</li>
-
-                <li>Registrar Information</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <!-- Financial Aid -->
-
-        <div class="resource-col" id="financial">
-
-            <i class="fa fa-money resource-icon"></i>
-
-            <h3>Financial Aid & Billing</h3>
-
-            <p>
-                Find information about paying for college and getting financial assistance.
-            </p>
-
-            <ul>
-
-                <li>Financial Aid Information</li>
-
-                <li>Scholarships</li>
-
-                <li>FAFSA Information</li>
-
-                <li>Emergency Financial Resources</li>
-
-            </ul>
+            </div>
 
         </div>
 
 
 
-        <!-- Career Development -->
+        <!-- FINANCIAL AID & BILLING -->
 
-        <div class="resource-col" id="career">
+        <div class="resource-col">
 
-            <i class="fa fa-briefcase resource-icon"></i>
+            <!-- Upload a financial aid/student image here -->
+            <img src="images/financial-aid.jpg" alt="Financial Aid and Billing">
 
-            <h3>Career Development</h3>
+            <div class="resource-layer">
 
-            <p>
-                Find resources to help prepare for internships, jobs, and your future career.
-            </p>
+                <div class="resource-text">
 
-            <ul>
+                    <h3>FINANCIAL AID &amp; BILLING</h3>
 
-                <li>Career Services</li>
+                    <p>
+                        FAFSA Information<br>
+                        Scholarships<br>
+                        Financial Aid<br>
+                        Emergency Financial Resources<br>
+                        Billing Information
+                    </p>
 
-                <li>Resume Resources</li>
+                </div>
 
-                <li>Internship Resources</li>
-
-                <li>Job Boards</li>
-
-            </ul>
+            </div>
 
         </div>
+
+
+
+        <!-- CAREER DEVELOPMENT-->
+
+        <div class="resource-col">
+
+            <!-- Upload a career/fair/professional image here -->
+            <img src="images/career-development.jpg" alt="Career Development">
+
+            <div class="resource-layer">
+
+                <div class="resource-text">
+
+                    <h3>CAREER DEVELOPMENT</h3>
+
+                    <p>
+                        Career Services<br>
+                        Resume Resources<br>
+                        Internship Resources<br>
+                        Job Boards<br>
+                        Interview Preparation
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </div>
 
 
 
-    <!-- SECOND ROW -->
-
     <div class="row">
 
 
-        <!-- Campus Life -->
+        <!-- CAMPUS LIFE-->
 
-        <div class="resource-col" id="campus">
+        <div class="resource-col">
 
-            <i class="fa fa-users resource-icon"></i>
+            <!-- Upload a Savannah State campus/student life image here -->
+            <img src="images/campus-life.jpg" alt="Campus Life">
 
-            <h3>Campus Life</h3>
+            <div class="resource-layer">
 
-            <p>
-                Explore activities, organizations, events, and opportunities to get involved on campus.
-            </p>
+                <div class="resource-text">
 
-            <ul>
+                    <h3>CAMPUS LIFE</h3>
 
-                <li>Campus Organizations</li>
+                    <p>
+                        Clubs &amp; Organizations<br>
+                        Events<br>
+                        Student Activities<br>
+                        Campus Locations<br>
+                        Campus Engagement
+                    </p>
 
-                <li>Student Activities</li>
+                </div>
 
-                <li>Campus Events</li>
-
-                <li>Student Engagement</li>
-
-            </ul>
-
-        </div>
-
-
-
-        <!-- Student Services -->
-
-        <div class="resource-col" id="student-services">
-
-            <i class="fa fa-user resource-icon"></i>
-
-            <h3>Student Services</h3>
-
-            <p>
-                Find helpful services that support students throughout their college experience.
-            </p>
-
-            <ul>
-
-                <li>Housing</li>
-
-                <li>Student Support</li>
-
-                <li>Health & Wellness</li>
-
-                <li>Student Assistance</li>
-
-            </ul>
+            </div>
 
         </div>
 
 
 
-        <!-- Athletics -->
+        <!-- STUDENT SERVICES-->
 
-        <div class="resource-col" id="athletics">
+        <div class="resource-col">
 
-            <i class="fa fa-trophy resource-icon"></i>
+            <!-- Upload a student services/support image here -->
+            <img src="images/student-services.jpg" alt="Student Services">
 
-            <h3>Athletics</h3>
+            <div class="resource-layer">
 
-            <p>
-                Find information about Savannah State athletics, teams, schedules, and student opportunities.
-            </p>
+                <div class="resource-text">
 
-            <ul>
+                    <h3>STUDENT SERVICES</h3>
 
-                <li>Athletic Teams</li>
+                    <p>
+                        Counseling &amp; Wellness<br>
+                        Transportation<br>
+                        Student Support<br>
+                        Campus Services<br>
+                        Student Organizations
+                    </p>
 
-                <li>Schedules</li>
+                </div>
 
-                <li>Athletic Events</li>
-
-                <li>Student-Athletes</li>
-
-            </ul>
+            </div>
 
         </div>
+
+
+
+        <!-- ATHLETICS -->
+
+        <div class="resource-col">
+
+            <!-- Upload a Savannah State athletics image here -->
+            <img src="images/athletics.jpg" alt="Athletics">
+
+            <div class="resource-layer">
+
+                <div class="resource-text">
+
+                    <h3>ATHLETICS</h3>
+
+                    <p>
+                        Sports<br>
+                        Teams<br>
+                        Schedules<br>
+                        Tickets<br>
+                        Athletics Information
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -316,71 +318,83 @@
 
 
 
-<!-- ADDITIONAL RESOURCES -->
+<!-- ADDITIONAL RESOURCES-->
 
-<section class="additional" id="additional">
+<section class="additional-resources" id="additional-resources">
 
-    <h1>Additional Resources</h1>
+    <h1>ADDITIONAL RESOURCES</h1>
 
-    <p class="section-intro">
-        Other helpful information students may need while navigating Savannah State.
+    <p>
+        Quick access to other useful Savannah State information.
     </p>
 
 
     <div class="row">
 
 
-        <!-- Other Resources -->
+        <!--  TIMES / LOCATIONS-->
 
-        <div class="additional-col">
+        <div class="campus-col">
 
-            <i class="fa fa-th-large"></i>
+            <!-- Upload a campus/location image here -->
+            <img src="images/times-locations.jpg" alt="Times and Locations">
 
-            <h3>Other Resources</h3>
+            <div class="layer">
 
-            <p>
-                Find additional university resources and information that may be helpful to students.
-            </p>
+                <h3>TIMES / LOCATIONS</h3>
 
-            <a href="#" class="resource-btn">VIEW RESOURCES</a>
+                <p>
+                    Campus hours, office locations, resource locations,
+                    and important times.
+                </p>
+
+            </div>
+
+        </div>
+
+
+<!-- CALENDAR -->
+
+        <div class="campus-col">
+
+            <!-- Upload a Savannah State events image here -->
+            <img src="images/calendar.jpg" alt="Campus Calendar">
+
+            <div class="layer">
+
+                <h3>CALENDAR</h3>
+
+                <p>
+                    Keep up with campus events, important dates,
+                    activities, and deadlines.
+                </p>
+
+            </div>
 
         </div>
 
 
 
-        <!-- Times / Locations -->
+        <!-- TECHNOLOGY-->
 
-        <div class="additional-col">
+        <div class="campus-col">
 
-            <i class="fa fa-map-marker"></i>
+            <!-- Upload a computer/technology/campus technology image here -->
+            <img src="images/technology.jpg" alt="Technology Resources">
 
-            <h3>Times / Locations</h3>
+            <div class="layer">
 
-            <p>
-                Find out where resources are located and when student services are available.
-            </p>
+                <h3>TECHNOLOGY</h3>
 
-            <a href="#location" class="resource-btn">VIEW LOCATIONS</a>
+                <p>
+                    Technology resources, student systems,
+                    computer access, and helpful technology information.
+                </p>
 
-        </div>
-
-
-
-        <!-- Important Contacts -->
-
-        <div class="additional-col">
-
-            <i class="fa fa-phone"></i>
-
-            <h3>Important Contacts</h3>
-
-            <p>
-                Find important contact information for university departments and student services.
-            </p>
-
-            <a href="#" class="resource-btn">VIEW CONTACTS</a>
+            </div>
 
         </div>
+
 
     </div>
 
@@ -388,40 +402,44 @@
 
 
 
-<!-- STUDENT SURVEY -->
+<!-- STUDENT SURVEY-->
 
 <section class="survey" id="survey">
 
-    <h1>Student Survey</h1>
+    <h1>STUDENT SURVEY</h1>
 
     <p>
-        Help us improve the Savannah State Student Resource Hub.
-        Your feedback will help us understand what resources students need.
+        Help us improve the Savannah State student experience.
+        Share your experiences and tell us what resources you would
+        like to see made easier to find.
     </p>
 
-    <a href="https://forms.gle/qPiV19iKUoWQYLKY6" target="_blank" class="resource-btn">
-        TAKE THE SURVEY
-    </a>
+    <!-- Replace # with the Google Form link when ready -->
+    <a href="#" class="hero-btn survey-btn">TAKE THE SURVEY</a>
 
 </section>
 
 
 
-<!-- LOCATION -->
+<!--  LOCATION Map -->
 
 <section class="location" id="location">
 
-    <h1>Location</h1>
+    <h1>LOCATION</h1>
 
-    <p class="section-intro">
-        Savannah State University — Savannah, Georgia
+    <p>
+        Find Savannah State University on the map.
     </p>
 
 
-    <div class="map-placeholder">
+    <div class="map">
+
+        <!-- Replace this iframe with the Google Maps embed
+             for Savannah State University when ready. -->
 
         <iframe
             src="https://www.google.com/maps?q=Savannah%20State%20University&output=embed"
+            allowfullscreen=""
             loading="lazy">
         </iframe>
 
@@ -431,30 +449,26 @@
 
 
 
-<!-- FOOTER -->
+<!--FOOTER -->
 
 <footer>
 
-    <h3>Savannah State Student Resource Hub</h3>
+    <h3>Savannah State University</h3>
 
     <p>
-        Helping Savannah State students find the resources they need.
+        Student Resource Hub
     </p>
 
-
-    <div class="social-icons">
+    <div class="footer-icons">
 
         <i class="fa fa-facebook"></i>
-
-        <i class="fa fa-instagram"></i>
-
         <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
 
     </div>
 
-
     <p>
-        © 2026 Savannah State Student Resource Hub
+        Savannah State University — Senior Design Capstone Project © 2026
     </p>
 
 </footer>
