@@ -257,8 +257,7 @@ nav img {
 
 
 .menu-icon {
-
-    display: none;
+    display: block;
 
     color: #fff;
 
@@ -280,7 +279,33 @@ nav img {
     cursor: pointer;
 
 }
+/* Show hamburger menu on all screen sizes */
+.nav-links {
+    position: fixed;
+    background: var(--ssu-blue);
+    height: 100vh;
+    width: 240px;
+    top: 0;
+    right: -240px;
+    text-align: left;
+    z-index: 20;
+    transition: 0.5s;
+    padding-top: 70px;
+}
 
+#menu-toggle:checked ~ .nav-links {
+    right: 0;
+}
+
+.nav-links ul li {
+    display: block;
+    padding: 15px 25px;
+}
+
+.close-icon {
+    display: block;
+    padding: 15px 25px;
+}
 
 
 /*  FIND A RESOURCE */
