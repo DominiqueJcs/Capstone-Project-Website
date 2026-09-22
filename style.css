@@ -93,7 +93,8 @@ nav img {
 
 
 /* 
-   NAVIGATION LINKS*/
+   NAVIGATION LINKS
+*/
 
 .nav-links {
 
@@ -126,8 +127,6 @@ nav img {
     font-size: 13px;
 
 }
-
-
 
 
 .nav-links ul li::after {
@@ -283,7 +282,7 @@ nav img {
 
 
 
-/*  FIND A RESOURCE */
+/* FIND A RESOURCE */
 
 .search-section {
 
@@ -323,7 +322,7 @@ nav img {
 
 
 
-/* SEARCH BOX*/
+/* SEARCH BOX */
 
 .search-box {
 
@@ -380,8 +379,7 @@ nav img {
 
 
 
-/* 
-   MAIN STUDENT RESOURCES*/
+/* MAIN STUDENT RESOURCES */
 
 .resources {
 
@@ -432,10 +430,7 @@ nav img {
 
 
 
-/* 
-   MAIN RESOURCE CARDS
-
- */
+/* MAIN RESOURCE CARDS */
 
 .resource-col {
 
@@ -546,8 +541,6 @@ nav img {
 
     color: #fff;
 
-
-
 }
 
 
@@ -566,7 +559,7 @@ nav img {
 
 
 
-/*  ADDITIONAL RESOURCES*/
+/* ADDITIONAL RESOURCES */
 
 .additional-resources {
 
@@ -608,7 +601,6 @@ nav img {
 
 /* ADDITIONAL RESOURCE */
 
-
 .campus-col {
 
     flex-basis: 32%;
@@ -635,9 +627,6 @@ nav img {
     display: block;
 
 }
-
-
-
 
 
 .layer {
@@ -667,9 +656,7 @@ nav img {
 
 
 
-/* 
-   TEXT THAT POPS UP FROM THE BOTTOM
-*/
+/* TEXT THAT POPS UP FROM THE BOTTOM */
 
 .layer h3 {
 
@@ -740,9 +727,7 @@ nav img {
 
 
 
-/* 
-   STUDENT SURVEY
- */
+/* STUDENT SURVEY */
 
 .survey {
 
@@ -793,9 +778,7 @@ nav img {
 
 
 
-/* 
-   LOCATION
-*/
+/* LOCATION */
 
 .location {
 
@@ -833,9 +816,7 @@ nav img {
 
 
 
-/* 
-   MAP
-*/
+/* MAP */
 
 .map {
 
@@ -944,7 +925,6 @@ footer p {
     }
 
 
-
     /* MOBILE MENU */
 
     .menu-icon {
@@ -1042,7 +1022,7 @@ footer p {
 
 
 
-    /* SEARCH fuction coming soon*/
+    /* SEARCH fuction coming soon */
 
     .search-section {
 
@@ -1170,7 +1150,7 @@ footer p {
 
 
 
-    /* SURVEY*/
+    /* SURVEY */
 
     .survey {
 
@@ -1198,7 +1178,7 @@ footer p {
 
 
 
-    /* MAP*/
+    /* MAP */
 
     .map iframe {
 
