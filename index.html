@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
     <!-- Page Title -->
     <title>Savannah State Student Resource Hub</title>
 
-    <!-- Google Font - Same style as the inspiration -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,19 +32,21 @@
 
 <!-- HEADER -->
 
-<section class="header" id="home">
+<section class="header">
 
     <nav>
 
-        <!-- CSS-only menu -->
+        <!-- Upload your Savannah State logo here -->
+        <a href="index.html">
+            <img src="Image 14.jpg" alt="Savannah State University Logo">
+        </a>
+
+        <!-- CSS-only mobile menu -->
         <input type="checkbox" id="menu-toggle">
 
         <label for="menu-toggle" class="menu-icon">
             <i class="fa fa-bars"></i>
         </label>
-
-
-        <!-- Side menu -->
 
         <div class="nav-links">
 
@@ -55,7 +58,7 @@
 
                 <li><a href="#home">HOME</a></li>
 
-                <li><a href="#resources">STUDENT RESOURCES</a></li>
+                <li><a href="#resources">RESOURCES</a></li>
 
                 <li><a href="#additional-resources">ADDITIONAL RESOURCES</a></li>
 
@@ -72,7 +75,7 @@
 
     <!-- Main header Text -->
 
-    <div class="text-box">
+    <div class="text-box" id="home">
 
         <h1>SAVANNAH STATE UNIVERSITY</h1>
 
@@ -101,11 +104,9 @@
         Looking for something at Savannah State? Start here.
     </p>
 
-
     <div class="search-box">
 
         <!-- Search functionality can be added later -->
-
         <input type="text" placeholder="I'm looking for...">
 
         <button type="button">SEARCH</button>
@@ -136,7 +137,6 @@
         <div class="resource-col">
 
             <!-- Upload an academic/library/student image here -->
-
             <img src="capstoneimages/Image 5.jpg" alt="Academic Support">
 
             <div class="resource-layer">
@@ -165,7 +165,6 @@
         <div class="resource-col">
 
             <!-- Upload a financial aid/student image here -->
-
             <img src="capstoneimages/Image 4.jpg" alt="Financial Aid and Billing">
 
             <div class="resource-layer">
@@ -195,7 +194,6 @@
         <div class="resource-col">
 
             <!-- Upload a career/fair/professional image here -->
-
             <img src="capstoneimages/Image 1.jpg" alt="Career Development">
 
             <div class="resource-layer">
@@ -231,7 +229,6 @@
         <div class="resource-col">
 
             <!-- Upload a Savannah State campus/student life image here -->
-
             <img src="capstoneimages/Image 7.jpg" alt="Campus Life">
 
             <div class="resource-layer">
@@ -261,7 +258,6 @@
         <div class="resource-col">
 
             <!-- Upload a student services/support image here -->
-
             <img src="capstoneimages/Image 11.jpg" alt="Student Services">
 
             <div class="resource-layer">
@@ -291,7 +287,6 @@
         <div class="resource-col">
 
             <!-- Upload a Savannah State athletics image here -->
-
             <img src="capstoneimages/Image 10.jpg" alt="Athletics">
 
             <div class="resource-layer">
@@ -340,26 +335,20 @@
         <div class="campus-col">
 
             <!-- Upload a campus/location image here -->
-
             <img src="capstoneimages/Image.jpg" alt="Times and Locations">
 
             <div class="layer">
 
-                <div class="layer-content">
+                <h3>TIMES / LOCATIONS</h3>
 
-                    <h3>TIMES / LOCATIONS</h3>
-
-                    <p>
-                        Campus hours, office locations,
-                        resource locations, and important times.
-                    </p>
-
-                </div>
+                <p>
+                    Campus hours, office locations, resource locations,
+                    and important times.
+                </p>
 
             </div>
 
         </div>
-
 
 
         <!-- CALENDAR -->
@@ -367,21 +356,16 @@
         <div class="campus-col">
 
             <!-- Upload a Savannah State events image here -->
-
             <img src="capstoneimages/Image 9.jpg" alt="Campus Calendar">
 
             <div class="layer">
 
-                <div class="layer-content">
+                <h3>CALENDAR</h3>
 
-                    <h3>CALENDAR</h3>
-
-                    <p>
-                        Keep up with campus events, important dates,
-                        activities, and deadlines.
-                    </p>
-
-                </div>
+                <p>
+                    Keep up with campus events, important dates,
+                    activities, and deadlines.
+                </p>
 
             </div>
 
@@ -394,21 +378,16 @@
         <div class="campus-col">
 
             <!-- Upload a computer/technology/campus technology image here -->
-
             <img src="capstoneimages/Image 2.jpg" alt="Technology Resources">
 
             <div class="layer">
 
-                <div class="layer-content">
+                <h3>TECHNOLOGY</h3>
 
-                    <h3>TECHNOLOGY</h3>
-
-                    <p>
-                        Technology resources, student systems,
-                        computer access, and helpful technology information.
-                    </p>
-
-                </div>
+                <p>
+                    Technology resources, student systems,
+                    computer access, and helpful technology information.
+                </p>
 
             </div>
 
@@ -434,10 +413,7 @@
     </p>
 
     <!-- Replace # with the Google Form link when ready -->
-
-    <a href="#" class="hero-btn survey-btn">
-        TAKE THE SURVEY
-    </a>
+    <a href="#" class="hero-btn survey-btn">TAKE THE SURVEY</a>
 
 </section>
 
@@ -453,10 +429,10 @@
         Find Savannah State University on the map.
     </p>
 
-
     <div class="map">
 
-        <!-- Replace this iframe with the Google Maps embed when ready -->
+        <!-- Replace this iframe with the Google Maps embed
+             for Savannah State University when ready. -->
 
         <iframe
             src="https://www.google.com/maps?q=Savannah%20State%20University&output=embed"
@@ -480,47 +456,13 @@
         Student Resource Hub
     </p>
 
-
-    <!-- Social Media -->
-
     <div class="footer-icons">
 
-
-        <!-- Facebook -->
-
-        <a href="https://www.facebook.com/SavannahStateUniversity/"
-           target="_blank"
-           aria-label="Facebook">
-
-            <i class="fa fa-facebook"></i>
-
-        </a>
-
-
-        <!-- X / Twitter -->
-
-        <a href="https://x.com/SavannahState"
-           target="_blank"
-           aria-label="X">
-
-            <i class="fa fa-twitter"></i>
-
-        </a>
-
-
-        <!-- Instagram -->
-
-        <a href="https://www.instagram.com/savannahstate/"
-           target="_blank"
-           aria-label="Instagram">
-
-            <i class="fa fa-instagram"></i>
-
-        </a>
-
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
 
     </div>
-
 
     <p>
         Savannah State University — Senior Design Capstone Project © 2026
@@ -532,3 +474,4 @@
 </body>
 
 </html>
+```
