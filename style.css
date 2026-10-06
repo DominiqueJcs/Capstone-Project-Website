@@ -861,64 +861,58 @@ nav img {
 
 footer {
 
-width: 100%;
+    width: 100%;
 
-text-align: center;
+    text-align: center;
 
-padding: 50px 20px;
+    padding: 50px 20px;
 
-background: var(--ssu-blue);
+    background: var(--ssu-blue);
 
-color: #fff;
+    color: #fff;
 
 }
 
 
 footer h3 {
 
-margin-bottom: 10px;
+    margin-bottom: 10px;
 
-font-size: 20px;
+    font-size: 20px;
 
 }
 
 
 footer p {
 
-font-size: 12px;
+    font-size: 12px;
 
-margin: 8px 0;
+    margin: 8px 0;
 
-color: #ddd;
+    color: #ddd;
 
 }
 
 
 .footer-icons {
 
-margin: 20px 0;
-
-}
-
-
-.footer-icons a {
-
-text-decoration: none;
+    margin: 20px 0;
 
 }
 
 
 .footer-icons i {
 
-color: var(--ssu-orange);
+    color: var(--ssu-orange);
 
-margin: 0 10px;
+    margin: 0 10px;
 
-cursor: pointer;
+    cursor: pointer;
 
-font-size: 18px;
+    font-size: 18px;
 
 }
+
 
 
 /* MOBILE RESPONSIVE DESIGN */
@@ -2099,4 +2093,8 @@ footer p {
     }
 
 }
+
+
+
+
 
