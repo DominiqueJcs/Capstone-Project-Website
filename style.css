@@ -83,7 +83,6 @@ nav {
 
 }
 
-
 nav img {
 
     width: 150px;
@@ -176,17 +175,12 @@ nav img {
     text-align: center;
 
 }
-
-
 .text-box h1 {
 
     font-size: 55px;
 
     font-weight: 600;
-
 }
-
-
 .text-box h2 {
 
     font-size: 34px;
@@ -2089,7 +2083,6 @@ footer p {
     footer {
 
         padding: 35px 15px;
-
     }
 
 }
