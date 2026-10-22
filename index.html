@@ -29,19 +29,14 @@
     <section class="header">
 
         <nav>
-            
-            <!-- CSS-only mobile menu -->
-            <input type="checkbox" id="menu-toggle">
-
-            <label for="menu-toggle" class="menu-icon">
+            <button type="button" class="menu-icon" aria-label="Open navigation menu">
                 <i class="fa fa-bars"></i>
-            </label>
+            </button>
 
             <div class="nav-links">
-
-                <label for="menu-toggle" class="close-icon">
+                <button type="button" class="close-icon" aria-label="Close navigation menu">
                     <i class="fa fa-times"></i>
-                </label>
+                </button>
 
                 <ul>
                     <li><a href="#home">HOME</a></li>
@@ -50,9 +45,7 @@
                     <li><a href="#survey">SURVEY</a></li>
                     <li><a href="#location">LOCATION</a></li>
                 </ul>
-
             </div>
-
         </nav>
 
         <!-- Main header Text -->
@@ -433,6 +426,30 @@
         </p>
 
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.querySelector('.menu-icon');
+            const closeIcon = document.querySelector('.close-icon');
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksItems = document.querySelectorAll('.nav-links a');
+
+            if (!menuIcon || !closeIcon || !navLinks) return;
+
+            const setMenuState = (isOpen) => {
+                navLinks.classList.toggle('active', isOpen);
+                menuIcon.classList.toggle('active', isOpen);
+                closeIcon.classList.toggle('active', isOpen);
+            };
+
+            menuIcon.addEventListener('click', () => setMenuState(true));
+            closeIcon.addEventListener('click', () => setMenuState(false));
+
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', () => setMenuState(false));
+            });
+        });
+    </script>
 
 </body>
 
