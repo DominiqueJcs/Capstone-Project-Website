@@ -1037,4 +1037,36 @@ footer p {
 
     }
 
+    .resource-layer,
+    .layer {
+        background: rgba(0, 40, 85, 0.62);
+    }
+
+    .resource-layer:hover,
+    .layer:hover {
+        background: rgba(0, 40, 85, 0.62);
+    }
+
+    .resource-col:hover .resource-text,
+    .resource-text {
+        bottom: 15%;
+        opacity: 1;
+    }
+
+    .layer h3,
+    .layer p,
+    .layer:hover h3,
+    .layer:hover p {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    .layer h3 {
+        top: 38%;
+    }
+
+    .layer p {
+        top: 58%;
+    }
+
 }
