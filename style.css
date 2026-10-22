@@ -690,17 +690,17 @@ nav img {
 
     font-size: 25px;
 
-    bottom: -80px;
-
     left: 50%;
 
-    transform: translateX(-50%);
+    top: 38%;
+
+    transform: translate(-50%, 30px);
 
     position: absolute;
 
     opacity: 0;
 
-    transition: 0.5s;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 
 }
 
@@ -715,35 +715,35 @@ nav img {
 
     line-height: 20px;
 
-    bottom: -130px;
-
     left: 50%;
 
-    transform: translateX(-50%);
+    top: 58%;
+
+    transform: translate(-50%, 30px);
 
     position: absolute;
 
     opacity: 0;
 
-    transition: 0.5s;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 
 }
 
 
 .layer:hover h3 {
 
-    bottom: 48%;
-
     opacity: 1;
+
+    transform: translate(-50%, 0);
 
 }
 
 
 .layer:hover p {
 
-    bottom: 27%;
-
     opacity: 1;
+
+    transform: translate(-50%, 0);
 
 }
 
