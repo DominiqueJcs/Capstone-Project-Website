@@ -1,1 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Times & Locations | Savannah State University</title>
 
+    <link rel="stylesheet" href="times-locations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="page-header">
+        <a href="index.html" class="back-link">
+            <i class="fa fa-arrow-left"></i> Back to Home
+        </a>
+
+        <p class="small-title">SAVANNAH STATE UNIVERSITY</p>
+        <h1>Campus Times & Locations</h1>
+        <p>Find campus offices, student services, building locations, and helpful contact information.</p>
+    </header>
+
+   /* SEARCH */
+    <section class="directory-search">
+        <h2>FIND A CAMPUS RESOURCE</h2>
+        <p>Search by office, building, service, or keyword.</p>
+
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" id="resource-search" placeholder="Try mail room, King-Frazier, library..." aria-label="Search campus resources">
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Resources</button>
+            <button class="filter-btn" data-filter="academic">Academic</button>
+            <button class="filter-btn" data-filter="money">Financial</button>
+            <button class="filter-btn" data-filter="student">Student Services</button>
+            <button class="filter-btn" data-filter="campus">Campus Life</button>
+        </div>
+    </section>
+
+/* CAMPUS DIRECTORY */
+    <main class="directory">
+        <h2 class="section-title">CAMPUS DIRECTORY</h2>
+        <p class="section-intro">
+            Office hours can change during holidays, summer, and university breaks.
+            Check the official link before visiting.
+        </p>
+
+        <div class="resource-grid" id="resource-grid">
+
+            /* LIBRARY */
+            <article class="directory-card" data-category="academic">
+                <img src="capstoneimages/Image 5.jpg" alt="Library or study space">
+
+                <div class="card-info">
+                    <p class="category">ACADEMIC SUPPORT</p>
+                    <h3>Asa H. Gordon Library</h3>
+                    <p>Study space, research help, books, digital databases, library workshops, and librarian support.</p>
+                    <p><i class="fa fa-map-marker"></i> 3219 College Street. Confirm the building location before visiting.</p>
+                    <p><i class="fa fa-clock-o"></i> Fall 2026: Mon–Thu 8 AM–7 PM; Fri 8 AM–5 PM; Sat closed; Sun 3–7 PM.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-4324</p>
+                    <a href="https://savannahstate.edu/library/" target="_blank" rel="noopener noreferrer">Official Library Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* MAIL CENTER */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image.jpg" alt="Campus mail center">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS SERVICES</p>
+                    <h3>Mail Center / Mail Room</h3>
+                    <p>Residential student mailboxes, package pickup, and outgoing mail services.</p>
+                    <p><i class="fa fa-map-marker"></i> First floor of King-Frazier Student Center, across from the bookstore.</p>
+                    <p><i class="fa fa-clock-o"></i> Mon–Fri, 8:30 AM–4:30 PM, except university holidays.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3126</p>
+                    <a href="https://savannahstate.edu/student-services/mail/" target="_blank" rel="noopener noreferrer">Official Mail Services Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* BOOKSTORE */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 9.jpg" alt="University bookstore">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS SERVICES</p>
+                    <h3>University Bookstore</h3>
+                    <p>Textbooks, school supplies, snacks, electronics, and Savannah State clothing and merchandise.</p>
+                    <p><i class="fa fa-map-marker"></i> Next to the King-Frazier Student Center.</p>
+                    <p><i class="fa fa-clock-o"></i> Mon–Fri, 8:30 AM–4:30 PM. Weekends closed; seasonal changes may apply.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3099</p>
+                    <a href="https://savannahstate.edu/student-services/bookstore/" target="_blank" rel="noopener noreferrer">Official Bookstore Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* REGISTRAR */
+            <article class="directory-card" data-category="academic student">
+                <img src="capstoneimages/Image 4.jpg" alt="University administration building">
+
+                <div class="card-info">
+                    <p class="category">ACADEMIC ADMINISTRATION</p>
+                    <h3>Office of the Registrar</h3>
+                    <p>Registration records, transcripts, enrollment information, and other academic records.</p>
+                    <p><i class="fa fa-map-marker"></i> Colston Administration Building, Suite 221.</p>
+                    <p><i class="fa fa-clock-o"></i> Mon–Fri, 8 AM–5 PM.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-4162, Option 3</p>
+                    <a href="https://savannahstate.edu/registrar/contact-us/" target="_blank" rel="noopener noreferrer">Official Registrar Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+          /* FINANCIAL AID */
+            <article class="directory-card" data-category="money academic">
+                <img src="capstoneimages/Image 4.jpg" alt="Financial aid office">
+
+                <div class="card-info">
+                    <p class="category">FINANCIAL</p>
+                    <h3>Office of Financial Aid</h3>
+                    <p>FAFSA questions, grants, scholarships, aid eligibility, verification, and financial aid advising.</p>
+                    <p><i class="fa fa-map-marker"></i> Colston Building.</p>
+                    <p><i class="fa fa-clock-o"></i> Mon–Fri, 8 AM–5 PM.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-4162, Option 6</p>
+                    <a href="https://savannahstate.edu/financial-aid/contact/" target="_blank" rel="noopener noreferrer">Official Financial Aid Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* BURSAR */
+            <article class="directory-card" data-category="money student">
+                <img src="capstoneimages/Image 4.jpg" alt="Student billing office">
+
+                <div class="card-info">
+                    <p class="category">FINANCIAL</p>
+                    <h3>Bursar's Office / Student Accounts</h3>
+                    <p>Tuition and fee billing, payments, student account questions, and refunds.</p>
+                    <p><i class="fa fa-map-marker"></i> Colston Administration Building.</p>
+                    <p><i class="fa fa-clock-o"></i> Mon–Fri, 8 AM–5 PM.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-4042</p>
+                    <a href="https://savannahstate.edu/bursar/" target="_blank" rel="noopener noreferrer">Official Bursar Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* CAREER SERVICES */
+            <article class="directory-card" data-category="academic student">
+                <img src="capstoneimages/Image 1.jpg" alt="Career development">
+
+                <div class="card-info">
+                    <p class="category">CAREER DEVELOPMENT</p>
+                    <h3>Career Services</h3>
+                    <p>Career planning, job preparation, resumes, interview preparation, and career development support.</p>
+                    <p><i class="fa fa-map-marker"></i> King-Frazier Student Center, Suite 233. Verify current location on the official site.</p>
+                    <p><i class="fa fa-clock-o"></i> A university career guide lists Mon–Fri, 9 AM–6 PM. Confirm current hours before visiting.</p>
+                    <p><i class="fa fa-phone"></i> Use the official university page to confirm current contact information.</p>
+                    <a href="https://savannahstate.edu/" target="_blank" rel="noopener noreferrer">SSU Official Website <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* STUDENT ORGANIZATIONS */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 7.jpg" alt="Student clubs and campus activities">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS LIFE</p>
+                    <h3>Student Programs & Organizations</h3>
+                    <p>Information about student clubs, organizations, involvement, and campus activities.</p>
+                    <p><i class="fa fa-map-marker"></i> King-Frazier Student Center, Suite 246.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3117</p>
+                    <p><i class="fa fa-clock-o"></i> Check the official page for current office hours.</p>
+                    <a href="https://savannahstate.edu/student-affairs/programs-organizations/" target="_blank" rel="noopener noreferrer">Official Student Organizations Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+          /* ACCESS SERVICES */
+            <article class="directory-card" data-category="student academic">
+                <img src="capstoneimages/Image 11.jpg" alt="Student support services">
+
+                <div class="card-info">
+                    <p class="category">STUDENT SUPPORT</p>
+                    <h3>Office of Accommodations & Access Services</h3>
+                    <p>Coordinates reasonable accommodations and access support for students with disabilities.</p>
+                    <p><i class="fa fa-map-marker"></i> King-Frazier Student Center, second floor. Confirm the correct room with the office.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3114 or 912-358-3080</p>
+                    <p><i class="fa fa-clock-o"></i> Contact the office for current hours and appointment details.</p>
+                    <a href="https://savannahstate.edu/student-affairs/office-of-accommodations-and-access-services/" target="_blank" rel="noopener noreferrer">Official Access Services Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* COUNSELING CENTER */
+            <article class="directory-card" data-category="student">
+                <img src="capstoneimages/Image 11.jpg" alt="Student wellness support">
+
+                <div class="card-info">
+                    <p class="category">STUDENT WELLNESS</p>
+                    <h3>Counseling Center</h3>
+                    <p>Confidential student counseling, individual and group support, workshops, and referrals.</p>
+                    <p><i class="fa fa-clock-o"></i> Appointments by phone, Mon–Fri, 9 AM–5 PM; walk-ins may be available after appointments.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3114</p>
+                    <p><i class="fa fa-map-marker"></i> Contact the office to confirm the current location and appointment options.</p>
+                    <a href="https://savannahstate.edu/student-affairs/counseling/" target="_blank" rel="noopener noreferrer">Official Counseling Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* ID CARD SERVICES */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 2.jpg" alt="Student identification card services">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS SERVICES</p>
+                    <h3>ID Card Services / Tiger Card</h3>
+                    <p>Student ID card help and information about adding Flex Funds for approved campus purchases.</p>
+                    <p><i class="fa fa-map-marker"></i> See the official page for the current service desk location.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3109</p>
+                    <p><i class="fa fa-clock-o"></i> Confirm current office hours before visiting.</p>
+                    <a href="https://savannahstate.edu/student-services/id-card-services/" target="_blank" rel="noopener noreferrer">Official ID Card Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* DINING SERVICES */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 9.jpg" alt="Campus dining">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS LIFE</p>
+                    <h3>Dining Services & Meal Plans</h3>
+                    <p>Campus dining locations, meal plans, and dining information for students.</p>
+                    <p><i class="fa fa-map-marker"></i> Dining locations vary around campus; use the official page for current locations.</p>
+                    <p><i class="fa fa-clock-o"></i> Hours vary by dining location and academic calendar.</p>
+                    <a href="https://savannahstate.edu/student-services/" target="_blank" rel="noopener noreferrer">Official Student Services Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* PARKING SERVICES */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 10.jpg" alt="Campus parking">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS TRANSPORTATION</p>
+                    <h3>Parking Services</h3>
+                    <p>Parking permits, parking rules, permit pickup, and parking questions.</p>
+                    <p><i class="fa fa-map-marker"></i> Payne Hall.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-3003</p>
+                    <p><i class="fa fa-clock-o"></i> Permit pickup is listed as 8 AM–4 PM. Check the official page for current details.</p>
+                    <a href="https://savannahstate.edu/student-services/parking/" target="_blank" rel="noopener noreferrer">Official Parking Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* CAMPUS SHUTTLE */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 10.jpg" alt="Campus shuttle or trolley">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS TRANSPORTATION</p>
+                    <h3>Campus Shuttle & Bus Services</h3>
+                    <p>Campus shuttle and trolley information, route details, and connections with local bus service.</p>
+                    <p><i class="fa fa-clock-o"></i> The on-campus shuttle is listed as Mon–Fri, 7:30 AM–5:30 PM on class days. Schedules may change.</p>
+                    <p><i class="fa fa-map-marker"></i> Check the official page for stops and current service notices.</p>
+                    <a href="https://savannahstate.edu/student-services/shuttle/" target="_blank" rel="noopener noreferrer">Official Shuttle Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* HOUSING */
+            <article class="directory-card" data-category="student campus">
+                <img src="capstoneimages/Image 7.jpg" alt="Campus residence hall">
+
+                <div class="card-info">
+                    <p class="category">CAMPUS LIVING</p>
+                    <h3>Housing & Residence Life</h3>
+                    <p>Residence hall information, housing applications, room assignments, maintenance requests, and housing resources.</p>
+                    <p><i class="fa fa-map-marker"></i> Contact the office or use the official page for current office location.</p>
+                    <p><i class="fa fa-clock-o"></i> Check the official page for current office hours.</p>
+                    <a href="https://savannahstate.edu/housing/" target="_blank" rel="noopener noreferrer">Official Housing Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* ADMISSIONS */
+            <article class="directory-card" data-category="academic student">
+                <img src="capstoneimages/Image 4.jpg" alt="University admissions office">
+
+                <div class="card-info">
+                    <p class="category">UNIVERSITY SERVICES</p>
+                    <h3>Office of Admissions</h3>
+                    <p>Admissions questions, application support, and information for prospective and incoming students.</p>
+                    <p><i class="fa fa-map-marker"></i> Colston Building, Suite 120.</p>
+                    <p><i class="fa fa-phone"></i> 912-358-4162</p>
+                    <p><i class="fa fa-envelope"></i> admissions@savannahstate.edu</p>
+                    <a href="https://savannahstate.edu/undergraduate/contact-us/" target="_blank" rel="noopener noreferrer">Official Admissions Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+            /* VETERANS RESOURCE CENTER */
+            <article class="directory-card" data-category="student">
+                <img src="capstoneimages/Image 11.jpg" alt="Student resource center">
+
+                <div class="card-info">
+                    <p class="category">STUDENT SUPPORT</p>
+                    <h3>Veterans Resource Center</h3>
+                    <p>Support for military-connected students, VA benefits guidance, resource navigation, and a place to connect with other veterans.</p>
+                    <p><i class="fa fa-map-marker"></i> King-Frazier Student Center, Room 239.</p>
+                    <p><i class="fa fa-clock-o"></i> Contact the office to confirm current hours.</p>
+                    <a href="https://savannahstate.edu/outreach/" target="_blank" rel="noopener noreferrer">Official Resource Center Page <i class="fa fa-external-link"></i></a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="no-results" class="no-results">No matching resources found. Try another search.</p>
+
+        <p class="last-note">
+            This student directory is a capstone project and is not an official university directory.
+            Information can change. Please use the linked SSU pages to confirm details before visiting.
+        </p>
+    </main>
+
+    /* FOOTER */
+    <footer>
+        <h3>Savannah State University</h3>
+        <p>Student Resource Hub</p>
+        <p>Savannah State University — Senior Design Capstone Project © 2026</p>
+    </footer>
+
+    /* SEARCH AND FILTER */
+    <script>
+        const searchInput = document.getElementById("resource-search");
+        const cards = document.querySelectorAll(".directory-card");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const noResults = document.getElementById("no-results");
+
+        let currentFilter = "all";
+
+        function filterResources() {
+            const searchText = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            cards.forEach(function(card) {
+                const cardText = card.textContent.toLowerCase();
+                const categories = card.dataset.category;
+                const matchesSearch = cardText.includes(searchText);
+                const matchesFilter = currentFilter === "all" || categories.includes(currentFilter);
+
+                if (matchesSearch && matchesFilter) {
+                    card.hidden = false;
+                    visibleCount++;
+                } else {
+                    card.hidden = true;
+                }
+            });
+
+            noResults.style.display = visibleCount === 0 ? "block" : "none";
+        }
+
+        searchInput.addEventListener("input", filterResources);
+
+        filterButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                filterButtons.forEach(function(item) {
+                    item.classList.remove("active");
+                });
+
+                button.classList.add("active");
+                currentFilter = button.dataset.filter;
+                filterResources();
+            });
+        });
+    </script>
+
+</body>
+</html>
