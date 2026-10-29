@@ -29,14 +29,19 @@
     <section class="header">
 
         <nav>
-            <button type="button" class="menu-icon" aria-label="Open navigation menu">
+            
+            <!-- CSS-only mobile menu -->
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
                 <i class="fa fa-bars"></i>
-            </button>
+            </label>
 
             <div class="nav-links">
-                <button type="button" class="close-icon" aria-label="Close navigation menu">
+
+                <label for="menu-toggle" class="close-icon">
                     <i class="fa fa-times"></i>
-                </button>
+                </label>
 
                 <ul>
                     <li><a href="#home">HOME</a></li>
@@ -45,7 +50,9 @@
                     <li><a href="#survey">SURVEY</a></li>
                     <li><a href="#location">LOCATION</a></li>
                 </ul>
+
             </div>
+
         </nav>
 
         <!-- Main header Text -->
@@ -281,25 +288,25 @@
 
         <div class="row">
 
-           
-<!-- TIMES / LOCATIONS -->
-<a href="times-location.html" class="campus-col">
+            <!-- TIMES / LOCATIONS -->
+            <div class="campus-col">
 
-    <!-- Upload a campus/location image here -->
-    <img src="capstoneimages/Image.jpg" alt="Times and Locations">
+                <!-- Upload a campus/location image here -->
+                <img src="capstoneimages/Image.jpg" alt="Times and Locations">
 
-    <div class="layer">
+                <div class="layer">
 
-        <h3>TIMES / LOCATIONS</h3>
+                    <h3>TIMES / LOCATIONS</h3>
 
-        <p>
-            Campus hours, office locations, resource locations,
-            and important times.
-        </p>
+                    <p>
+                        Campus hours, office locations, resource locations,
+                        and important times.
+                    </p>
 
-    </div>
+                </div>
 
-</a>
+            </div>
+
 
             <!-- CALENDAR -->
             <div class="campus-col">
@@ -418,36 +425,16 @@
    <a href="https://www.linkedin.com/school/savannah-state-university/" target="_blank" aria-label="LinkedIn">
         <i class="fa fa-linkedin"></i>
     </a>
+</div>
+        </div>
+
         <p>
             Savannah State University — Senior Design Capstone Project © 2026
         </p>
 
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuIcon = document.querySelector('.menu-icon');
-            const closeIcon = document.querySelector('.close-icon');
-            const navLinks = document.querySelector('.nav-links');
-            const navLinksItems = document.querySelectorAll('.nav-links a');
-
-            if (!menuIcon || !closeIcon || !navLinks) return;
-
-            const setMenuState = (isOpen) => {
-                navLinks.classList.toggle('active', isOpen);
-                menuIcon.classList.toggle('active', isOpen);
-                closeIcon.classList.toggle('active', isOpen);
-            };
-
-            menuIcon.addEventListener('click', () => setMenuState(true));
-            closeIcon.addEventListener('click', () => setMenuState(false));
-
-            navLinksItems.forEach(link => {
-                link.addEventListener('click', () => setMenuState(false));
-            });
-        });
-    </script>
-
 </body>
 
 </html>
+
