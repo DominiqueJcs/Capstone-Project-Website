@@ -373,166 +373,188 @@ nav img {
 }
 
 
-/* MAIN STUDENT RESOURCES */
+
+/* 
+   MAIN STUDENT RESOURCES*/
 
 .resources {
+
     width: 80%;
+
     margin: auto;
+
     text-align: center;
+
     padding: 60px 0 50px;
+
 }
+
 
 .resources h1 {
+
     font-size: 36px;
+
     font-weight: 600;
+
     color: #333;
+
 }
+
 
 .resources > p {
+
     color: #777;
+
     font-size: 14px;
+
     line-height: 22px;
+
     padding: 10px;
+
 }
 
-/* RESOURCE CARD ROW */
 
 .row {
+
     margin-top: 5%;
+
     display: flex;
+
     justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+
 }
 
-/* MAIN RESOURCE CARDS */
+
+
+/* 
+   MAIN RESOURCE CARDS
+
+ */
 
 .resource-col {
-    flex: 1 1 30%;
-    min-width: 250px;
+
+    flex-basis: 31%;
+
     height: 300px;
+
     border-radius: 10px;
-    margin-bottom: 2%;
+
+    margin-bottom: 5%;
+
     position: relative;
+
     overflow: hidden;
+
     cursor: pointer;
+
 }
+
 
 .resource-col img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
     display: block;
+
     transition: 0.5s;
+
 }
 
-/* RESOURCE OVERLAY */
+
+
+/* MAIN RESOURCE */
 
 .resource-layer {
-    background: rgba(0, 40, 85, 0.30);
+
+    background: transparent;
+
     height: 100%;
+
     width: 100%;
+
     position: absolute;
+
     top: 0;
+
     left: 0;
+
     transition: 0.5s;
+
 }
 
-/* BLUE OVERLAY ON HOVER */
 
-.resource-col:hover .resource-layer {
-    background: rgba(0, 40, 85, 0.65);
+
+/* Dark SSU overlay on hover */
+
+.resource-layer:hover {
+
+    background: rgba(0, 40, 85, 0.78);
+
 }
 
-/* RESOURCE TEXT */
+
+
+/* RESOURCE */
 
 .resource-text {
+
     width: 100%;
+
     position: absolute;
-    bottom: 0;
+
+    bottom: -150px;
+
     left: 0;
+
     padding: 20px;
-    box-sizing: border-box;
+
     color: #fff;
+
     text-align: center;
+
     transition: 0.5s;
+
 }
+
 
 .resource-text h3 {
+
     font-size: 22px;
-    font-weight: 600;
+
+    font-weight: 500;
+
     margin-bottom: 12px;
-    color: #fff;
+
 }
+
 
 .resource-text p {
-    font-size: 13px;
-    line-height: 21px;
+
+    font-size: 12px;
+
+    line-height: 22px;
+
     color: #fff;
+
 }
 
-/* DESKTOP HOVER EFFECT */
 
-@media (hover: hover) and (pointer: fine) {
 
-    .resource-text {
-        transform: translateY(35px);
-    }
+.resource-col:hover .resource-text {
 
-    .resource-col:hover .resource-text {
-        transform: translateY(0);
-    }
+    bottom: 15%;
 
-    .resource-col:hover img {
-        transform: scale(1.05);
-    }
 }
 
-/* MOBILE AND TABLET */
 
-@media (max-width: 768px) {
+.resource-col:hover img {
 
-    .resources {
-        width: 90%;
-    }
+    transform: scale(1.05);
 
-    .resources h1 {
-        font-size: 28px;
-    }
-
-    .row {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .resource-col {
-        width: 100%;
-        min-width: 0;
-        height: 280px;
-        margin-bottom: 10px;
-    }
-
-    .resource-layer {
-        background: rgba(0, 40, 85, 0.50);
-    }
-
-    .resource-text {
-        transform: none;
-        bottom: 0;
-        padding: 18px;
-    }
-
-    .resource-text h3 {
-        font-size: 20px;
-    }
-
-    .resource-text p {
-        font-size: 13px;
-    }
-
-    .resource-col:hover img {
-        transform: none;
-    }
 }
 
 
