@@ -319,50 +319,5 @@
         <p>Savannah State University — Senior Design Capstone Project © 2026</p>
     </footer>
 
-    /* SEARCH AND FILTER */
-    <script>
-        const searchInput = document.getElementById("resource-search");
-        const cards = document.querySelectorAll(".directory-card");
-        const filterButtons = document.querySelectorAll(".filter-btn");
-        const noResults = document.getElementById("no-results");
-
-        let currentFilter = "all";
-
-        function filterResources() {
-            const searchText = searchInput.value.toLowerCase().trim();
-            let visibleCount = 0;
-
-            cards.forEach(function(card) {
-                const cardText = card.textContent.toLowerCase();
-                const categories = card.dataset.category;
-                const matchesSearch = cardText.includes(searchText);
-                const matchesFilter = currentFilter === "all" || categories.includes(currentFilter);
-
-                if (matchesSearch && matchesFilter) {
-                    card.hidden = false;
-                    visibleCount++;
-                } else {
-                    card.hidden = true;
-                }
-            });
-
-            noResults.style.display = visibleCount === 0 ? "block" : "none";
-        }
-
-        searchInput.addEventListener("input", filterResources);
-
-        filterButtons.forEach(function(button) {
-            button.addEventListener("click", function() {
-                filterButtons.forEach(function(item) {
-                    item.classList.remove("active");
-                });
-
-                button.classList.add("active");
-                currentFilter = button.dataset.filter;
-                filterResources();
-            });
-        });
-    </script>
-
 </body>
 </html>
