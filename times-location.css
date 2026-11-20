@@ -1,4 +1,3 @@
-
 /* COLORS */
 :root {
     --blue: #002855;
@@ -43,7 +42,7 @@ body {
 
 /* UNIVERSITY NAME */
 .small-title {
-    color: var(--orange);
+    color: var(--orange) !important;
     font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -62,7 +61,7 @@ body {
 
 /* DIRECTORY SECTION */
 .directory {
-    max-width: 1100px;
+    max-width: 1250px;
     margin: auto;
     padding: 30px 20px 60px;
 }
@@ -76,20 +75,22 @@ body {
 
 /* ALL CAMPUS LOCATIONS */
 .resource-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
 }
 
 /* EACH LOCATION CARD */
 .directory-card {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 38% minmax(0, 1fr);
     background-color: var(--white);
     border: 1px solid #dddddd;
     border-radius: 15px;
     overflow: hidden;
     transition: 0.3s;
+    min-width: 0;
 }
 
 /* CARD HOVER */
@@ -101,31 +102,36 @@ body {
 .directory-card img {
     width: 100%;
     height: 100%;
-    min-height: 230px;
+    min-height: 240px;
     object-fit: cover;
     display: block;
 }
 
 /* RIGHT SIDE INFORMATION */
 .card-info {
-    padding: 30px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 0;
 }
 
 /* LOCATION NAME */
 .card-info h3 {
     color: var(--blue);
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
 }
 
 /* LOCATION AND HOURS */
 .card-info p {
     color: var(--gray);
-    font-size: 15px;
-    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
 }
 
 /* WEBSITE LINK */
@@ -135,12 +141,13 @@ body {
     color: var(--blue);
     border: 2px solid #bbbbbb;
     border-radius: 12px;
-    padding: 12px 20px;
-    font-size: 14px;
+    padding: 11px 15px;
+    font-size: 13px;
     font-weight: 600;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 8px;
     align-self: flex-start;
+    text-align: center;
     transition: 0.3s;
 }
 
@@ -181,14 +188,20 @@ footer p {
 }
 
 /* TABLET SCREEN */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     .page-header h1 {
         font-size: 30px;
     }
 
+    /* ONE CARD PER ROW */
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* PICTURE LEFT, INFORMATION RIGHT */
     .directory-card {
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 38% minmax(0, 1fr);
     }
 
     .card-info {
@@ -216,40 +229,56 @@ footer p {
     }
 
     .directory {
-        padding: 20px 15px 40px;
+        padding: 20px 12px 40px;
     }
 
     .section-title {
         font-size: 22px;
     }
 
-    /* PICTURE ABOVE INFORMATION */
-    .directory-card {
+    /* ONE CARD PER ROW */
+    .resource-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
+    /* PICTURE LEFT, INFORMATION RIGHT */
+    .directory-card {
+        grid-template-columns: 34% minmax(0, 1fr);
+        border-radius: 12px;
+    }
+
+    /* CARD PICTURE */
     .directory-card img {
-        height: 220px;
-        min-height: 220px;
+        width: 100%;
+        height: 100%;
+        min-height: 230px;
+        object-fit: cover;
     }
 
+    /* CARD INFORMATION */
     .card-info {
-        padding: 20px;
+        padding: 12px;
     }
 
     .card-info h3 {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 8px;
     }
 
     .card-info p {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 8px;
     }
 
     /* MOBILE WEBSITE BUTTON */
     .card-info a {
         width: 100%;
-        text-align: center;
-        padding: 13px 15px;
+        padding: 10px 5px;
+        font-size: 12px;
+        margin-top: 5px;
     }
 
     footer {
