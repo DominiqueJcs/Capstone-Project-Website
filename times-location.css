@@ -29,15 +29,27 @@ body {
 
 /* BACK TO HOME */
 .back-link {
-    color: var(--blue);
-    text-decoration: none;
-    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     display: inline-block;
-    margin-bottom: 30px;
+    color: var(--blue);
+    background-color: var(--white);
+    border: 2px solid #bbbbbb;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.back-link:hover {
-    color: var(--orange);
+/* BACK BUTTON HOVER */
+.back-link:hover,
+.back-link:focus-visible {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--white);
 }
 
 /* UNIVERSITY NAME */
@@ -71,6 +83,7 @@ body {
     color: var(--blue);
     font-size: 26px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 /* ALL CAMPUS LOCATIONS */
